@@ -8,7 +8,7 @@
 			Digital Toolbox</h1><br>
 
 {{ Form::open(array('url' => '/worker')) }}
-  Username:{{ Form::text('username') }}
+  Username:{{ Form::text('username') }}<br>
   Password: {{ Form::text('password') }}<br>
    {{ Form::submit ('Log In') }}
 

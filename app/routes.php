@@ -16,25 +16,20 @@ Route::get('/', function()
 {
 	return View::make('main.hello');
 });
+
 //loggout
 Route::get('/logout', function()
 {
 	return View::make('main.hello');
 });
 
-Route::get('/main', function()
+/*Route::get('worker', function()
 {
-	return View::make('main.main')
-	->with('pagetitle', 'Main Hub');
+	return View::make('main.hello');
 });
-
-Route::get('/worker', function()
-{
-	return View::make('worker.worker')
-	->with('pagetitle', 'Main Hub');
-});
+*/
 
 //client routes
 
-Route::get('clients', array('uses' => 'ClientController@clientLookup'));
+Route::get('/worker', array('uses' => 'WorkerController@workerprofile'));
 

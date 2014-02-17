@@ -36,7 +36,7 @@
 		h2 {
 
 			font-size: 24px;
-			margin: 16px 0 0 0;			
+			margin: 16px 0 0 0;
 		}
 
 		h3 {
@@ -50,7 +50,7 @@
 	</style>
 </head>
 <body>
-		<a href=precise_beta/public>Log Out</a>
+		<a href="/logout">Log Out</a>
 	<div class="welcome">
 		@yield('content')
 	</div>

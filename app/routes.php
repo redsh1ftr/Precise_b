@@ -11,30 +11,26 @@
 |
 */
 
-
 Route::get('/', function()
 {
 	return View::make('main.hello');
 });
-//loggout
 Route::get('/logout', function()
 {
 	return View::make('main.hello');
 });
-
 Route::get('/main', function()
 {
-	return View::make('main.main')
-	->with('pagetitle', 'Main Hub');
+	return View::make('main.main')->with('pagetitle', 'Main Hub');
 });
 
 Route::get('/worker', function()
 {
-	return View::make('worker.worker')
-	->with('pagetitle', 'Main Hub');
+	return View::make('worker.worker')->with('pagetitle', 'Main Hub');
 });
 
-//client routes
+/****************
+ * Client Routes
+ ****************/
 
-Route::get('clients', array('uses' => 'ClientController@clientLookup'));
-
+Route::get('/clients', array('uses' => 'ClientController@clientLookup'));

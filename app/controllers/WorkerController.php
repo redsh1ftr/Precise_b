@@ -19,5 +19,7 @@ class WorkerController extends BaseController {
 
 public function workerprofile(){
 
-return View::make('main.hello',  array('pagetitle', 'Client Hub'));
+return View::make('worker.worker',  array('pagetitle', 'Client Hub'));
+}
+
 }

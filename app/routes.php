@@ -18,7 +18,7 @@ Route::get('/', function()
 });
 
 //loggout
-Route::get('/logout', function()
+Route::get('logout', function()
 {
 	return View::make('main.hello');
 });

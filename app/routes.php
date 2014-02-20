@@ -15,22 +15,47 @@ Route::get('/', function()
 {
 	return View::make('main.hello');
 });
+<<<<<<< HEAD
+=======
+
+//loggout
+>>>>>>> origin/Call-Log
 Route::get('/logout', function()
 {
 	return View::make('main.hello');
 });
+<<<<<<< HEAD
 Route::get('/main', function()
 {
 	return View::make('main.main')->with('pagetitle', 'Main Hub');
 });
+=======
 
-Route::get('/worker', function()
+>>>>>>> origin/Call-Log
+
+
+/*Route::get('worker', function()
 {
+<<<<<<< HEAD
 	return View::make('worker.worker')->with('pagetitle', 'Main Hub');
+=======
+	return View::make('main.hello');
+>>>>>>> origin/Call-Log
 });
+*/
 
+<<<<<<< HEAD
 /****************
  * Client Routes
  ****************/
 
 Route::get('/clients', array('uses' => 'ClientController@clientLookup'));
+=======
+//client routes
+
+Route::get('/worker', array('uses' => 'WorkerController@workerprofile'));
+
+Route::get('/marketing/call', array('as' => 'callhome', 'uses' => 'MarketingController@workerprofile'));
+
+Route::post('/marketing/call/create', array('uses' => 'MarketingController@addcall'));
+>>>>>>> origin/Call-Log

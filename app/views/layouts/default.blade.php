@@ -50,7 +50,11 @@
 	</style>
 </head>
 <body>
+<<<<<<< HEAD
 		<a href="/logout">Log Out</a>
+=======
+		
+>>>>>>> origin/Call-Log
 	<div class="welcome">
 		@yield('content')
 	</div>

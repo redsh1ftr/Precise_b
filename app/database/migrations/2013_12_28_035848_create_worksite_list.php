@@ -20,7 +20,7 @@ class CreateWorksiteList extends Migration {
 			$table->string('phone_number');
 			$table->string('fax_number');
 			$table->string('email');
-			$table->string('open_hours');
+			$table->string('hours');
 			$table->string('street');
 			$table->string('city');
 			$table->string('state');

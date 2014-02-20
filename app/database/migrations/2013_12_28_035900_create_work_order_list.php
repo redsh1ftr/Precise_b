@@ -14,7 +14,7 @@ class CreateWorkOrderList extends Migration {
 		Schema::create('work_order_list', function($table){
 			$table->increments('id');
 			$table->string('work_order_number');
-			$table->integer('service_counter')
+			$table->integer('service_counter');
 			$table->integer('client_id');
 			$table->integer('worksite_id');
 			$table->integer('billing_id');

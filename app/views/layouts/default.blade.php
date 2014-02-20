@@ -50,7 +50,7 @@
 	</style>
 </head>
 <body>
-		<a href=precise_beta/public>Log Out</a>
+		
 	<div class="welcome">
 		@yield('content')
 	</div>

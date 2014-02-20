@@ -17,8 +17,7 @@
 
 @foreach($call_list1 as $call_list)
 <ul>
-Call Number: 
-{{ $call_list->id }}<br>
+Business Name:<br>
 {{ $call_list->business_name }}<br>
 Number Dialed: 
 {{ $call_list->phone }}<br>

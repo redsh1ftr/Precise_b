@@ -23,6 +23,8 @@ Route::get('/logout', function()
 	return View::make('main.hello');
 });
 
+
+
 /*Route::get('worker', function()
 {
 	return View::make('main.hello');
@@ -33,3 +35,6 @@ Route::get('/logout', function()
 
 Route::get('/worker', array('uses' => 'WorkerController@workerprofile'));
 
+Route::get('/marketing/call', array('as' => 'callhome', 'uses' => 'MarketingController@workerprofile'));
+
+Route::post('/marketing/call/create', array('uses' => 'MarketingController@addcall'));
